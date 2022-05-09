@@ -1,0 +1,36 @@
+.main-navigation__menu-btn {
+  cursor: pointer;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.main-navigation__title {
+  color: white;
+  margin-top: 1rem;
+}
+
+.main-navigation__title a {
+  text-decoration: none;
+}
+
+.main-navigation__title .logo{
+  width: 3rem;
+}
+
+.main-navigation__header-nav {
+  display: none;
+}
+
+.main-navigation__drawer-nav {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__menu-btn {
+    display: none;
+  }
+
+  .main-navigation__header-nav {
+    display: block;
+  }
+}
