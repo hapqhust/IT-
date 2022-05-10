@@ -1,0 +1,10 @@
+.ant-carousel{
+    margin: 4rem 0;
+    width: 100%;    
+}
+
+.ant-carousel img {
+    display: block;
+    min-width: 100%;
+    object-fit: contain;
+}
