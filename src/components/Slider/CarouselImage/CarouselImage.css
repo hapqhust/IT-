@@ -1,6 +1,7 @@
 .ant-carousel{
-    margin: 4rem 0;
+    margin-top: 4rem;
     width: 100%;    
+    height: auto;
 }
 
 .ant-carousel img {
