@@ -1,0 +1,75 @@
+.footer{
+    color: rgb(144, 144, 144);
+    background-color: rgb(0,0,0);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footer .footer-widgets{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 44px;
+    padding: 50px 0 0;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1340px;
+}
+
+.footer .footer-widgets aside.widget {
+    width: 35%;
+    padding: 0 15px;
+    margin-bottom: 24px;
+
+}
+
+.footer .footer-widgets .widgettitle{
+    margin-bottom: 27px;
+}
+
+.footer .footer-widgets .widgettitle h4{
+    color: rgb(200, 200, 200) !important;
+    line-height: 1.4;
+    font-weight: lighter;
+    font-size: 1.8rem;
+}
+
+.footer .footer-widgets .textwidget .mbdc{
+    display: block;
+    background-color: rgb(200, 200, 200) !important;
+    border: 1px solid rgb(200, 200, 200);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-widgets .textwidget p{
+    margin-bottom: 5px;
+    line-height: 28px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.footer .new-footer-socials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer .new-footer-socials .social-media{
+    text-decoration: none;
+    color:#909090;
+}
+
+.footer .new-footer-socials .facebook{
+    margin-left: -20px;
+}
+.footer .new-footer-socials .icon{
+    padding: 0 20px;
+    font-size: 40px;
+    color: #909090;
+}
+
+.footer .new-footer-socials .icon:hover,
+.footer .new-footer-socials .icon:active{
+    font-size: 45px;
+    color:white;
+}

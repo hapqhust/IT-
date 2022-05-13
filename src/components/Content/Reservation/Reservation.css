@@ -1,0 +1,45 @@
+.contact-info {
+    text-align: center;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto;
+    background: url(../../../assets/image/contact/contact.jpg) center center / cover;
+    background-position: center center;
+    padding: 20px 50px;
+}
+
+.contact-info .container .headline__secondary{
+    display: block;
+    width: 20%;
+    margin: 80px auto;
+    margin-bottom: 40px;
+}
+
+.contact-info .container p{
+    font-size: 1rem;
+    font-family:'NotoSansJP-Regular';
+    font-weight: 500;
+    line-height: 28px;
+    color: white;
+}
+
+.contact-info .container .contact-info__description{
+    margin-top: 5rem;
+
+}
+.container .contact__button{
+    display: block;
+    background: #ffffff47;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 200px;
+    height: 40px;
+    margin: 40px auto 20px;
+    color: white;
+}
+
+.container .contact__button:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
