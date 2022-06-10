@@ -1,5 +1,6 @@
 import { Button, Space } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import introTitle from "../../../assets/image/intro/intro-title.png"
 
 import "./Article.css"
@@ -20,14 +21,16 @@ const Article = (props:any) =>{
                     シェフがそれぞれの料理に自分の魂を込めると、食材の純度がより完全になります。 
                     その完璧なハーモニーはわびです！
                     </p>
-                    <Button type="primary" className="article__button">
-                        <span>↳
-                        </span>
-                        もっと見る
-                    </Button>
+                    <Link to="/gioi-thieu">
+                        <Button type="primary" className="article__button">
+                            <span>↳
+                            </span>
+                            もっと見る
+                        </Button>
+                    </Link>
                 </div>
                 <div className="article__image">
-                    <img src="https://kingbbq.vn/wp-content/uploads/2014/05/king-bbq.jpg" alt=""/>
+                    <img src="https://tokyodeli.com.vn/Data/Sites/3/News/277/97c57bbf0035f16ba8241-min.jpg" alt=""/>
                 </div>
             </div>
         </div>

@@ -8,6 +8,7 @@ import dish4 from "../../../assets/image/menu/dish4.jpg";
 
 
 import "./Menu.css"
+import { Link } from 'react-router-dom';
 
 const Menu = (props:any) =>{
     return(
@@ -25,11 +26,13 @@ const Menu = (props:any) =>{
                         非常に繊細で多様な味わいです。それぞれの料理はメッセージであり、
                         文化の一部であり、お客様に敬意を表して贈る贈り物です。
                     </p>
-                    <Button type="primary" className="menu__button">
-                        <span>↳
-                        </span>
-                        もっと見る
-                    </Button>
+                    <Link to="/thuc-don">
+                        <Button type="primary" className="menu__button">
+                            <span>↳
+                            </span>
+                            もっと見る
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>

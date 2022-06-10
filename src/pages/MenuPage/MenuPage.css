@@ -1,0 +1,29 @@
+
+.menu-page__ttl-border{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+    line-height: 1.2rem;
+}
+
+.menu-page__ttl-border span.menu-page__ttl-en{
+    margin: 0 auto 12px;
+    display: block;
+}
+
+.menu-page__ttl-border span.menu-page__ttl-en::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 4px;
+    background-color: var(--primary-color);;
+    margin: 20px auto;
+}
+
+.menu-page__ttl-border span.menu-page__ttl-jp{
+    font-size: 1.1rem;
+    display: block;
+}

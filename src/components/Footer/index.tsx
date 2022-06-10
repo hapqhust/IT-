@@ -1,5 +1,8 @@
 import { Button, Space } from 'antd';
 import { FacebookOutlined, InstagramOutlined, YoutubeOutlined } from '@ant-design/icons';
+import instagram from "../../assets/image/footer/instagram.png"
+import facebook from "../../assets/image/footer/facebook.png"
+import youtube from "../../assets/image/footer/youtube.png"
 import React from 'react';
 
 import "./Footer.css"
@@ -25,13 +28,14 @@ const Footer = (props:any) =>{
                         </p>
                         <br/>
                         <div className="new-footer-socials">
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener" className="social-media"> <FacebookOutlined className="icon facebook"/> </a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener" className="social-media"><InstagramOutlined className="icon instagram"/></a>
-                            <a href="https://www.youtube.com/" target="_blank" rel="noopener" className="social-media"><YoutubeOutlined className="icon youtube"/></a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener" className="social-media"> <img src={facebook} alt="" className="icon facebook"/> </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener" className="social-media"><img src={instagram} alt="" className="icon instagram"/></a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener" className="social-media"><img src={youtube} alt="" className="icon youtube"/></a>
                         </div>
                         </div>
                 </aside>
             </div>
+            <div className="sub-footer"></div>
         </div>
     );
 }

@@ -24,6 +24,7 @@
   .nav-links a {
     border: 1px solid transparent;
     color: white;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1rem;
     text-decoration: none;
     padding: 2rem;
@@ -58,8 +59,9 @@
   .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
   }
 
   .nav-links a:hover,

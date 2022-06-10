@@ -1,5 +1,6 @@
 import { Button } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import contactTitle from "../../../assets/image/contact/contact-title.png";
 import "./Reservation.css";
 
@@ -10,7 +11,7 @@ const Reservation = (props:any) =>{
             <img src={contactTitle} alt="" className='headline__secondary'/>
             <div className='contact-info__description'>
                 <p>
-                    HM日本レストラン
+                    HAMI SUSHI レストラン
                 </p>
                 <p>
                     * 和美プレミアムに来て、日本料理の真髄を楽しんでください。あなたの小さな願いがすべて聞こえます。</p>
@@ -19,11 +20,13 @@ const Reservation = (props:any) =>{
                 </p>
             </div>
             <div>
+            <Link to="dat-ban">
                 <Button className="contact__button">
                     <span>↳
                     </span>
                     予約する
                 </Button>
+            </Link>
             </div>
         </div>
     </div>
