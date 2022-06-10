@@ -1,8 +1,8 @@
 import React from "react";
 import "./CarouselImage.css";
 import { Carousel } from "antd";
-import anh1 from '../../../assets/image/mon1.jpg'
-import anh2 from '../../../assets/image/mon2.jpg'
+import anh1 from '../../../assets/image/mon1.png'
+import anh2 from '../../../assets/image/mon2.png'
 import anh3 from '../../../assets/image/mon3.jpg'
 
 const CarouselImage = (props: any) => {

@@ -3,7 +3,7 @@
     width: 100% !important;
     max-width: none !important;
     height: auto;
-    background: url(../../../assets/image/contact/contact.jpg) center center / cover;
+    background: url(../../../assets/image/contact/bansao.jpg) center center / cover;
     background-position: center center;
     padding: 20px 50px;
 }
@@ -11,14 +11,14 @@
 .contact-info .container .headline__secondary{
     display: block;
     width: 20%;
-    margin: 80px auto;
+    margin: 100px auto;
     margin-bottom: 40px;
 }
 
 .contact-info .container p{
     font-size: 1rem;
-    font-family:'NotoSansJP-Regular';
-    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: lighter;
     line-height: 28px;
     color: white;
 }

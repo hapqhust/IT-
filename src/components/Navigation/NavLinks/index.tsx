@@ -6,19 +6,19 @@ import './NavLinks.css';
 const NavLinks = (props:any) => {
   return <ul className="nav-links">
     <li>
-      <NavLink to="/" exact>TRANG CHỦ</NavLink>
+      <NavLink to=".">ホームページ</NavLink>
     </li>
     <li>
-      <NavLink to="/gioi-thieu">GIỚI THIỆU</NavLink>
+      <NavLink to="/gioi-thieu">導入</NavLink>
     </li>
     <li>
-      <NavLink to="/thuc-don">THỰC ĐƠN</NavLink>
+      <NavLink to="/thuc-don">メニュー</NavLink>
     </li>
-    <li>
+    {/* <li>
       <NavLink to="/uu-dai">ƯU ĐÃI</NavLink>
-    </li>
+    </li> */}
     <li>
-      <NavLink to="/dat-ban">ĐẶT BÀN</NavLink>
+      <NavLink to="/dat-ban">予約</NavLink>
     </li>
   </ul>
 };

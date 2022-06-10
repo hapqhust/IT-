@@ -1,6 +1,25 @@
 .menu__content{
     background: #f0efef;
 }
+
+.menu__content::before {
+    content: "";
+
+    display: block;
+    height: 10px;
+    bottom: -10px;
+    /* -height */
+    left: 0;
+    right: 0;
+    /* TODO Add browser prefixes */
+    background: linear-gradient( 45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%), linear-gradient( -45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%);
+    background-size: 9px 20px;
+    /* toothSize doubleHeight */
+    background-position: 0 -10px;
+    /* horizontalOffset -height */
+
+}
+
 .menu__content .container{
     display: flex;
     flex-direction: row;
@@ -22,8 +41,8 @@
 
 .container .menu__text p{
     font-size: 0.9rem;
-    font-family:'NotoSansJP-Regular';
-    font-weight:bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: lighter;
     line-height: 28px;
     color: #383737ac
 }
