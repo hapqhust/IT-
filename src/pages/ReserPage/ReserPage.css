@@ -1,0 +1,66 @@
+.reser-page{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.reser-page__ttl-border{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+    line-height: 1.2rem;
+}
+
+.reser-page__ttl-border::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    background: url(../../assets/image/intro/bg_floral01.png) no-repeat top left;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;
+}
+.reser-page__ttl-border span.reser-page__ttl-en{
+    margin: 0 auto 12px;
+    display: block;
+}
+
+.reser-page__ttl-border span.reser-page__ttl-en::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 20px auto;
+}
+
+.reser-page__ttl-border span.reser-page__ttl-jp{
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.form__image img{
+    text-align: center;
+    display: block;
+    max-width: 800px;
+    margin-left: 80px;
+}
+
+.form__input{
+    border: 2px solid var(--primary-color);
+    margin-right: 80px;
+    padding: 36px 15px 25px;
+}
+
+.reser-page__button-submit{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    
+}

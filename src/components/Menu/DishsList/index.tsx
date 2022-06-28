@@ -6,10 +6,10 @@ import './DishsList.css'
 
 interface Props{
   items: DishInfo[];
+  funct: (value:number, id:string) => void;
 }
 
-const DishsList:React.FC<Props> = (props) => {
-  const {items} = props;
+const DishsList:React.FC<Props> = ({items, funct}) => {
     if (items.length === 0) {
       return (
         <div className="center">
@@ -22,8 +22,10 @@ const DishsList:React.FC<Props> = (props) => {
   
     return (
       <ul className="dishs-list">
-        {props.items.map(monan => (
-          <DishItem itemDish = {monan}
+        {items.map(monan => (
+          <DishItem 
+            itemDish = {monan}
+            funct = {funct}
           />
         ))}
       </ul>

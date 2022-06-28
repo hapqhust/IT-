@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import './App.css';
+import DishDetail from './components/Menu/DishDetail';
 
 import MainNavigation from './components/Navigation/MainNavigation';
 import HomePage from './pages/HomePage';
@@ -17,8 +18,8 @@ const App = () => {
           <Route path='/' element={<HomePage/>}/>
           <Route path='/gioi-thieu' element={<IntroPage/>}/>
           <Route path='/thuc-don' element={<MenuPage/>}/>
+          <Route path='/thuc-don/:dishId' element={<DishDetail/>}/>
           <Route path='/dat-ban' element={<ReserPage/>}/>
-          {/* <Redirect to='/'></Redirect> */}
         </Routes>
       </main>
     </Router>
