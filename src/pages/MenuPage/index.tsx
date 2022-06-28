@@ -287,7 +287,7 @@ const MenuPage:React.FC = () => {
             </Row>
             <Row justify='center'>
               <Button type="primary" htmlType="submit" className="menu-page__button-submit">
-                    予約する
+                  注文する
               </Button>
             </Row>
           </Col>

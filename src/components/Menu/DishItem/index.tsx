@@ -53,7 +53,7 @@ const DishItem:React.FC<Props> = (props) => {
                         {`価格：${itemDish.price*1000} 円`}
                       </p></Col>
                       <Col span={12}>
-                        <InputNumber addonBefore={<ShopOutlined style={{color:"#ed6f00"}}/>} style={{ width: '100%', color:"#ed6f00" }} min={0} max={100} defaultValue={3} onChange={handleA}/>
+                        <InputNumber addonBefore={<ShopOutlined style={{color:"#ed6f00"}}/>} style={{ width: '100%', color:"#ed6f00" }} min={0} max={100} defaultValue={0} onChange={handleA}/>
                       </Col>
                     </Row>
                     <Link to={`./${itemDish.id}`}>
