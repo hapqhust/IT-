@@ -12,7 +12,7 @@ const Footer = (props:any) =>{
         <div className="footer">
             <div className="footer-widgets">
                 <aside id="stm_text-2" className="widget">
-                    <div className="widgettitle widget-footer-title"><h4>HM日本レストラン</h4></div>		
+                    <div className="widgettitle widget-footer-title"><h4>HAMI SUSHI レストラン</h4></div>		
                     <div className="textwidget"><hr className="mbdc"/>
                         <p>和美プレミアムの日本料理は、洗練された加工とアレンジだけでなく、
                         非常に繊細で多様な味わいです。それぞれの料理はメッセージであり、

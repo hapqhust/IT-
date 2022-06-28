@@ -9,6 +9,16 @@
     line-height: 1.2rem;
 }
 
+.menu-page__ttl-border::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: url(../../assets/image/intro/bg_floral01.png) no-repeat top left;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 300px;
+}
 .menu-page__ttl-border span.menu-page__ttl-en{
     margin: 0 auto 12px;
     display: block;
@@ -18,7 +28,7 @@
     content: "";
     display: block;
     width: 24px;
-    height: 4px;
+    height: 2px;
     background-color: var(--primary-color);;
     margin: 20px auto;
 }
@@ -26,4 +36,58 @@
 .menu-page__ttl-border span.menu-page__ttl-jp{
     font-size: 1.1rem;
     display: block;
+    margin-bottom: 100px;
+}
+
+.user-page__filter {
+    margin: 30px 90px;
+    background-color: #efefef;
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 8px;
+    box-shadow: 10px;
+}
+
+
+.user-page__filter-content{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:rgb(102, 102, 102);
+    margin: 0;
+}
+
+.user-page__list-filter{
+    margin-top: 10px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.user-page__list-filter .form-item{
+    font-weight: 500;
+}
+
+.user-page__list-filter .input-item:hover{
+    border-color: var(--primary-color);
+}
+
+.user-page__list-filter .button{
+    width: 100px;
+}
+
+.user-page__list-filter .primary{
+    background-color: var(--primary-color);
+    border: 0;
+}
+
+.user-page__list-filter .basic:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.menu-page__button-submit{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    width: 70%;
+    height: 2.5rem;
+    border-radius: 20px;
 }

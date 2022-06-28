@@ -1,0 +1,22 @@
+.dish-detail{
+    margin: 100px 20px
+}
+
+.dish-detail__image{
+    margin: 50px;
+    padding-right: 10px;
+}
+
+.dish-detail__title h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.dish-detail__title h2::after{
+    content: "";
+    display: block;
+    width: 600px;
+    height: 2px;
+    background-color: black;;
+}

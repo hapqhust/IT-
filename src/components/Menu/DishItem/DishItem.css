@@ -1,6 +1,29 @@
 .dish-item {
     margin: 1.2rem;
+    color: #ed6f00
 }
-  
-.dish-item img:hover{
+
+.dishDetail__button:hover{
+    border: 0px;
+    background-color: #ed6f00;
+    color: white;
+}
+.dishDetail__button{
+    width: 100%;
+    background-color: white;
+    color: #ed6f00;
+    border:2px solid #ed6f00;
+    font-weight: 600;
+}
+.description {
+    display: block;
+    display: -webkit-box;
+    height: 0.9rem*2*2; /*fontsize *lineHeight * số dòng */
+    line-height: 2;
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;  /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top:10px;
 }
