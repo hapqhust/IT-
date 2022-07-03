@@ -1,7 +1,9 @@
 import { Button, Card, Cascader, Col, DatePicker, Form, Input, InputNumber, Row, Select, TimePicker } from 'antd';
 import React, { useEffect, useState } from 'react'
+import { pushNotification } from '../../common/notification';
 import Footer from '../../components/Footer';
 import DishsList from '../../components/Menu/DishsList';
+import { NOTIFICATION_TYPE } from '../../const/notification';
 import { DishInfo } from '../../interface';
 import './MenuPage.css'
 
@@ -137,8 +139,11 @@ const MenuPage:React.FC = () => {
   }
 
   const onFinish = (values: any) => {
-    console.log(values);
+      pushNotification("SUCCESSFUL", "注文が成功してしました。", NOTIFICATION_TYPE.SUCCESS);
   };
+  const onFinishFailed = (values: any) => {
+    pushNotification("ERROR", "あなたはすべての情報を記入する必要があります", NOTIFICATION_TYPE.ERROR);
+};
 
   const getTotal = () => {
     var sum = 0;
@@ -224,16 +229,18 @@ const MenuPage:React.FC = () => {
         title={<h2 style={{color:"#f53737", fontWeight:"700", textAlign:"center", fontSize:"1.5rem"}}>注文情報</h2>}
         className="card-thanhtoan"
       >
+            <Form style={{marginLeft:"120px"}} name="nest-messages" onFinish={onFinish} 
+              validateMessages={validateMessages} labelAlign="left"
+              onFinishFailed={onFinishFailed}>
         <Row justify='space-between'>
-          <Col span={15}>
-            <Form style={{marginLeft:"120px"}} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages} labelAlign="left">
+              <Col span={15}>
                 <Form.Item colon={false} {...layout} name={['order', 'name']} label="名前" 
                     rules={[{ required: true }]}
                 >
                   <Input />
                 </Form.Item>
-                <Form.Item colon={false} {...layout}name={['order', 'email']} label="電話番号" 
-                  rules={[{ required: true }]}
+                <Form.Item colon={false} {...layout}name={['order', 'phoneNumber']} label="電話番号" 
+                  rules={[{ required: true, min:10, max:11 }]}
                 >
                   <Input />
                 </Form.Item>
@@ -258,9 +265,8 @@ const MenuPage:React.FC = () => {
                   <TimePicker />
                 </Form.Item>
                 {/* </Row> */}
-            </Form>
-          </Col>
-          <Col span={9}>
+              </Col>
+              <Col span={9}>
             <Row justify='space-between'>
               <Col><p>合計注文価格</p></Col>
               <Col><p>{`${Math.round(getTotal())} 円`}</p></Col>
@@ -286,12 +292,15 @@ const MenuPage:React.FC = () => {
                 } 円`}</h3>       
             </Row>
             <Row justify='center'>
-              <Button type="primary" htmlType="submit" className="menu-page__button-submit">
+              <Form.Item>
+              <Button type="primary" htmlType="submit" className="menu-page__button-submit" style={{width:"300px",}}>
                   注文する
               </Button>
+              </Form.Item>
             </Row>
-          </Col>
-        </Row>
+              </Col>
+          </Row>
+          </Form>
       </Card>
       <Footer/>
     </React.Fragment>
