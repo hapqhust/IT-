@@ -37,7 +37,7 @@ const ReserPage: React.FC = () => {
     <React.Fragment>
       <div className='reser-page'>
         <h2 className="reser-page__ttl-border">
-          <span className="reser-page__ttl-en">MAKE A REVERSATION</span>
+          <span className="reser-page__ttl-en">MAKE A RESERVATION</span>
           <span className="reser-page__ttl-jp">HAMI寿司の予約</span>
         </h2>
         <Row>
